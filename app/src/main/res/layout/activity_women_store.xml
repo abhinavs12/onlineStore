@@ -27,7 +27,7 @@
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textSize="24sp"
+                android:textSize="@dimen/textHeaderSize"
                 android:textStyle="bold|italic"
                 tools:layout_editor_absoluteX="64dp"
                 tools:layout_editor_absoluteY="16dp" />
@@ -49,7 +49,7 @@
                 android:lineSpacingExtra="36sp"
                 android:text="@string/croppedSwingSpotSweatCost"
                 android:textAlignment="center"
-                android:textSize="18sp"
+                android:textSize="@dimen/textNormalSize"
                 android:textStyle="bold|italic" />
 
             <ImageView
@@ -68,7 +68,7 @@
                 android:fontFamily="serif"
                 android:text="@string/overSizedJumperCost"
                 android:textAlignment="center"
-                android:textSize="18sp"
+                android:textSize="@dimen/textNormalSize"
                 android:textStyle="bold|italic" />
 
             <ImageView
@@ -87,7 +87,7 @@
                 android:fontFamily="serif"
                 android:text="@string/oneShoulderFloralDressCost"
                 android:textAlignment="center"
-                android:textSize="18sp"
+                android:textSize="@dimen/textNormalSize"
                 android:textStyle="bold|italic" />
 
             <ImageView
@@ -106,7 +106,7 @@
                 android:fontFamily="serif"
                 android:text="@string/denimWhiteTopCost"
                 android:textAlignment="center"
-                android:textSize="18sp"
+                android:textSize="@dimen/textNormalSize"
                 android:textStyle="bold|italic" />
 
             <ImageView
@@ -125,7 +125,7 @@
                 android:fontFamily="serif"
                 android:text="@string/asymmetricPolkaDotsDressCost"
                 android:textAlignment="center"
-                android:textSize="18sp"
+                android:textSize="@dimen/textNormalSize"
                 android:textStyle="bold|italic" />
 
         </LinearLayout>

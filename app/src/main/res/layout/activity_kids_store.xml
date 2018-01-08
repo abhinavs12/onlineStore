@@ -27,7 +27,7 @@
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textSize="24sp"
+                android:textSize="@dimen/textHeaderSize"
                 android:textStyle="bold|italic"
                 tools:layout_editor_absoluteX="88dp"
                 tools:layout_editor_absoluteY="30dp" />
@@ -48,7 +48,7 @@
                 android:fontFamily="serif"
                 android:text="@string/boysBlackBlazerCost"
                 android:textAlignment="center"
-                android:textSize="18sp"
+                android:textSize="@dimen/textNormalSize"
                 android:textStyle="bold|italic" />
 
             <ImageView
@@ -67,7 +67,7 @@
                 android:fontFamily="serif"
                 android:text="@string/whiteTShirtCost"
                 android:textAlignment="center"
-                android:textSize="18sp"
+                android:textSize="@dimen/textNormalSize"
                 android:textStyle="bold|italic" />
 
             <ImageView
@@ -86,7 +86,7 @@
                 android:fontFamily="serif"
                 android:text="@string/girlsWhiteTopCost"
                 android:textAlignment="center"
-                android:textSize="18sp"
+                android:textSize="@dimen/textNormalSize"
                 android:textStyle="bold|italic" />
 
             <ImageView
@@ -105,7 +105,7 @@
                 android:fontFamily="serif"
                 android:text="@string/printedTopCost"
                 android:textAlignment="center"
-                android:textSize="18sp"
+                android:textSize="@dimen/textNormalSize"
                 android:textStyle="bold|italic" />
         </LinearLayout>
     </ScrollView>

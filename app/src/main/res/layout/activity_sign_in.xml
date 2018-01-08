@@ -17,7 +17,7 @@
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textSize="24sp"
+        android:textSize="@dimen/textHeaderSize"
         android:textStyle="bold|italic"
         android:typeface="normal"
         tools:layout_editor_absoluteX="150dp"
@@ -39,7 +39,7 @@
         android:textAlignment="viewStart"
         android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textSize="18sp"
+        android:textSize="@dimen/textNormalSize"
         android:textStyle="bold|italic" />
 
     <EditText
@@ -56,7 +56,7 @@
         android:textAlignment="viewStart"
         android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textSize="18sp"
+        android:textSize="@dimen/textNormalSize"
         android:textStyle="bold|italic" />
 
     <Button
@@ -84,7 +84,7 @@
         android:textAlignment="viewStart"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textSize="18sp"
+        android:textSize="@dimen/textNormalSize"
         android:textStyle="bold|italic" />
 
     <TextView
@@ -100,6 +100,6 @@
         android:textAlignment="viewStart"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textSize="18sp"
+        android:textSize="@dimen/textNormalSize"
         android:textStyle="bold|italic" />
 </RelativeLayout>

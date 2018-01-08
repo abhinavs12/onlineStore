@@ -27,7 +27,7 @@
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textSize="24sp"
+                android:textSize="@dimen/textHeaderSize"
                 android:textStyle="bold|italic"
                 tools:layout_editor_absoluteX="89dp"
                 tools:layout_editor_absoluteY="16dp" />
@@ -48,7 +48,7 @@
                 android:fontFamily="serif"
                 android:text="@string/checkedShirtCost"
                 android:textAlignment="center"
-                android:textSize="18sp"
+                android:textSize="@dimen/textNormalSize"
                 android:textStyle="bold|italic" />
 
             <ImageView
@@ -67,7 +67,7 @@
                 android:fontFamily="serif"
                 android:text="@string/cardiganNavyBlueCost"
                 android:textAlignment="center"
-                android:textSize="18sp"
+                android:textSize="@dimen/textNormalSize"
                 android:textStyle="bold|italic" />
 
             <ImageView
@@ -86,7 +86,7 @@
                 android:fontFamily="serif"
                 android:text="@string/greyTShirtCost"
                 android:textAlignment="center"
-                android:textSize="18sp"
+                android:textSize="@dimen/textNormalSize"
                 android:textStyle="bold|italic" />
 
             <ImageView
@@ -106,7 +106,7 @@
                 android:fontFamily="serif"
                 android:text="@string/checkSlimFitShirtCost"
                 android:textAlignment="center"
-                android:textSize="18sp"
+                android:textSize="@dimen/textNormalSize"
                 android:textStyle="bold|italic" />
 
             <ImageView
@@ -125,7 +125,7 @@
                 android:fontFamily="serif"
                 android:text="@string/whiteSlimFitShirtCost"
                 android:textAlignment="center"
-                android:textSize="18sp"
+                android:textSize="@dimen/textNormalSize"
                 android:textStyle="bold|italic" />
         </LinearLayout>
     </ScrollView>

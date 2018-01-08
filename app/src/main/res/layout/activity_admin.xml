@@ -18,7 +18,7 @@
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textSize="24sp"
+        android:textSize="@dimen/textHeaderSize"
         android:textStyle="bold|italic" />
 
     <Button
