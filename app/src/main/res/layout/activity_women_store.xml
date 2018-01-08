@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
                 android:lineSpacingExtra="36sp"
-                android:text="@string/croppedSwingSpotSweat"
+                android:text="@string/croppedSwingSpotSweatCost"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:textStyle="bold|italic" />
@@ -66,7 +66,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
-                android:text="@string/overSizedJumper"
+                android:text="@string/overSizedJumperCost"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:textStyle="bold|italic" />
@@ -85,7 +85,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
-                android:text="@string/oneShoulderFloralDress"
+                android:text="@string/oneShoulderFloralDressCost"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:textStyle="bold|italic" />
@@ -104,7 +104,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
-                android:text="@string/denimWhiteTop"
+                android:text="@string/denimWhiteTopCost"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:textStyle="bold|italic" />
@@ -123,7 +123,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
-                android:text="@string/asymmetricPolkaDotsDress"
+                android:text="@string/asymmetricPolkaDotsDressCost"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:textStyle="bold|italic" />

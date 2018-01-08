@@ -12,7 +12,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseManager extends SQLiteOpenHelper {
 
-    public static final String DATABASE_NAME = "onlineeeeeshopp.db";
+    public static final String DATABASE_NAME = "onllineeeeeshopp.db";
 
     public static final String TABLE_NAME = "customer_table";
 

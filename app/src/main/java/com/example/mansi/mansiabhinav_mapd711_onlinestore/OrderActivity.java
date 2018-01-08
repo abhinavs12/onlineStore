@@ -19,7 +19,7 @@ public class OrderActivity extends AppCompatActivity {
     DatabaseManager mydb;
     RelativeLayout relativelayout;
     String username, user;
-    TextView noData, products, price, status, textView, textView1, textView2;
+    TextView noData, products, price, status, textView, textView1, textView2, textView3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,9 +34,12 @@ public class OrderActivity extends AppCompatActivity {
         textView = (TextView)  findViewById(R.id.textView30);
         textView1 = (TextView)  findViewById(R.id.textView31);
         textView2 = (TextView)  findViewById(R.id.textView32);
+        textView3 = (TextView)  findViewById(R.id.textView45);
         products = (TextView)  findViewById(R.id.textView41);
         price = (TextView)  findViewById(R.id.textView42);
         status = (TextView)  findViewById(R.id.textView43);
+
+        int totalPrice=0;
 
         Cursor res = mydb.getDataByUsername_table1(user);
         if(res.getCount() == 0 ){
@@ -53,7 +56,7 @@ public class OrderActivity extends AppCompatActivity {
 
             buffer.append(res.getString(2) +"\n");
             buffer2.append(res.getString(3) +"\n");
-            buffer1.append(res.getString(5) +"\n");
+            buffer1.append(res.getString(5)+" CAD" +"\n");
             buffer.append("\n");
             buffer.append("\n");
             buffer1.append("\n");
@@ -61,6 +64,7 @@ public class OrderActivity extends AppCompatActivity {
 
             buffer2.append("\n");
             buffer2.append("\n");
+            totalPrice = totalPrice + Integer.parseInt(res.getString(5));
 
 
             if (res.getString(2).length() > 20){
@@ -73,10 +77,11 @@ public class OrderActivity extends AppCompatActivity {
 
         }
 
-
+        String totalPriceString = Integer.toString(totalPrice);
         products.setText(buffer);
         price.setText(buffer1);
         status.setText(buffer2);
+        textView3.setText("Total Price: "+totalPriceString+" CAD");
 
 
 

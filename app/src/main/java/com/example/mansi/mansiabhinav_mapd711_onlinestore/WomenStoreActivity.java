@@ -39,10 +39,10 @@ public class WomenStoreActivity extends AppCompatActivity {
         image1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                String product = getString(R.string.boysBlackBlazer);
+                String product = getString(R.string.croppedSwingSpotSweat);
                 String status = getString(R.string.processing);
                 String currentTime = Calendar.getInstance().getTime().toGMTString();
-                mydb.insertData_table1(getIntent().getStringExtra("user"),"Cropped Swing Spot Sweat","Processing",currentTime,"35");
+                mydb.insertData_table1(getIntent().getStringExtra("user"),product, status,currentTime,"35");
                 startActivity(intent);
 
             }

@@ -46,7 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
-                android:text="@string/boysBlackBlazer"
+                android:text="@string/boysBlackBlazerCost"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:textStyle="bold|italic" />
@@ -65,7 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
-                android:text="@string/whiteTShirt"
+                android:text="@string/whiteTShirtCost"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:textStyle="bold|italic" />
@@ -84,7 +84,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
-                android:text="@string/girlsWhiteTop"
+                android:text="@string/girlsWhiteTopCost"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:textStyle="bold|italic" />
@@ -103,7 +103,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
-                android:text="@string/printedTop"
+                android:text="@string/printedTopCost"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:textStyle="bold|italic" />
