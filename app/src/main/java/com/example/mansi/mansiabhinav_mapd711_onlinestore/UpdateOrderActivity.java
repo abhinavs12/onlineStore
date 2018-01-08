@@ -33,16 +33,20 @@ public class UpdateOrderActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 String username="", productName="", status="", date="", price="";
+                String delivery = getString(R.string.outForDelivery);
+                String orderUpdated = getString(R.string.orderUpdated);
+                String noDataFound = getString(R.string.noDataFound);
+
                 Cursor res = mydb.getDataByID_table1(editText.getText().toString());
                 if(res.getCount() == 0 ){
-                    Toast.makeText(UpdateOrderActivity.this, "No Data Found", Toast.LENGTH_LONG).show();
+                    Toast.makeText(UpdateOrderActivity.this, noDataFound, Toast.LENGTH_LONG).show();
 
                     return;
                 }
                 while ((res.moveToNext())) {
                     username = res.getString(1);
                     productName = res.getString(2);
-                    status = "Out for Delivery";
+                    status = delivery;
                     date = res.getString(4);
                     price = res.getString(5);
                 }
@@ -54,7 +58,7 @@ public class UpdateOrderActivity extends AppCompatActivity {
                        username, productName, status, date, price);
 
                 if (update){
-                    textView.setText("Order Updated");
+                    textView.setText(orderUpdated);
                 }
                 else {
                     Toast.makeText(UpdateOrderActivity.this, "Error Occured Please Try Again", Toast.LENGTH_LONG).show();

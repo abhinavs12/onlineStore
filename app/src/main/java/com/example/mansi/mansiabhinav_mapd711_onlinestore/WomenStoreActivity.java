@@ -39,6 +39,8 @@ public class WomenStoreActivity extends AppCompatActivity {
         image1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
+                String product = getString(R.string.boysBlackBlazer);
+                String status = getString(R.string.processing);
                 String currentTime = Calendar.getInstance().getTime().toGMTString();
                 mydb.insertData_table1(getIntent().getStringExtra("user"),"Cropped Swing Spot Sweat","Processing",currentTime,"35");
                 startActivity(intent);
@@ -49,8 +51,10 @@ public class WomenStoreActivity extends AppCompatActivity {
         image2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
+                String product = getString(R.string.overSizedJumper);
+                String status = getString(R.string.processing);
                 String currentTime = Calendar.getInstance().getTime().toGMTString();
-                mydb.insertData_table1(getIntent().getStringExtra("user"),"Oversized Jumper","Processing",currentTime,"23");
+                mydb.insertData_table1(getIntent().getStringExtra("user"),product, status,currentTime,"23");
                 startActivity(intent);
 
             }
@@ -58,9 +62,11 @@ public class WomenStoreActivity extends AppCompatActivity {
 
         image3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                String product = getString(R.string.oneShoulderFloralDress);
+                String status = getString(R.string.processing);
 
                 String currentTime = Calendar.getInstance().getTime().toGMTString();
-                mydb.insertData_table1(getIntent().getStringExtra("user"),"One Shoulder Floral Dress","Processing",currentTime,"34");
+                mydb.insertData_table1(getIntent().getStringExtra("user"),product, status,currentTime,"34");
                 startActivity(intent);
 
             }
@@ -70,18 +76,21 @@ public class WomenStoreActivity extends AppCompatActivity {
             public void onClick(View v) {
 
 
+                String product = getString(R.string.denimWhiteTop);
+                String status = getString(R.string.processing);
                 String currentTime = Calendar.getInstance().getTime().toGMTString();
-                mydb.insertData_table1(getIntent().getStringExtra("user"),"Denim White Top","Processing",currentTime,"21");
+                mydb.insertData_table1(getIntent().getStringExtra("user"),product, status,currentTime,"21");
                 startActivity(intent);
             }
         });
 
         image5.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
+                String product = getString(R.string.asymmetricPolkaDotsDress);
+                String status = getString(R.string.processing);
 
                 String currentTime = Calendar.getInstance().getTime().toGMTString();
-                mydb.insertData_table1(getIntent().getStringExtra("user"),"Asymmetric Polka Dots Dress","Processing",currentTime,"23");
+                mydb.insertData_table1(getIntent().getStringExtra("user"),product, status,currentTime,"23");
                 startActivity(intent);
             }
         });

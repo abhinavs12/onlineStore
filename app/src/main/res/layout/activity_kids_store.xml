@@ -23,7 +23,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="17dp"
                 android:fontFamily="serif"
-                android:text="Kids Products:"
+                android:text="@string/kidsProducts"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textAppearance="@style/TextAppearance.AppCompat"
@@ -46,7 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
-                android:text="Boys Black Blazer"
+                android:text="@string/boysBlackBlazer"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:textStyle="bold|italic" />
@@ -65,7 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
-                android:text="White T-Shirt "
+                android:text="@string/whiteTShirt"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:textStyle="bold|italic" />
@@ -84,7 +84,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
-                android:text="Girls White Top"
+                android:text="@string/girlsWhiteTop"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:textStyle="bold|italic" />
@@ -103,7 +103,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
-                android:text="Printed Top"
+                android:text="@string/printedTop"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:textStyle="bold|italic" />

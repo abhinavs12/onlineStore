@@ -35,8 +35,10 @@ public class MenStoreActivity extends AppCompatActivity {
         image1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
+                String product = getString(R.string.checkedShirt);
+                String status = getString(R.string.processing);
                 String currentTime = Calendar.getInstance().getTime().toGMTString();
-                mydb.insertData_table1(getIntent().getStringExtra("user"),"Checked Shirt","Processing",currentTime,"35");
+                mydb.insertData_table1(getIntent().getStringExtra("user"),product, status,currentTime,"35");
                 startActivity(intent);
 
             }
@@ -45,8 +47,10 @@ public class MenStoreActivity extends AppCompatActivity {
         image2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
+                String product = getString(R.string.cardiganNavyBlue);
+                String status = getString(R.string.processing);
                 String currentTime = Calendar.getInstance().getTime().toGMTString();
-                mydb.insertData_table1(getIntent().getStringExtra("user"),"Cardigan Navy Blue","Processing",currentTime,"22");
+                mydb.insertData_table1(getIntent().getStringExtra("user"),product, status,currentTime,"22");
                 startActivity(intent);
             }
         });
@@ -55,8 +59,10 @@ public class MenStoreActivity extends AppCompatActivity {
             public void onClick(View v) {
 
 
+                String product = getString(R.string.greyTShirt);
+                String status = getString(R.string.processing);
                 String currentTime = Calendar.getInstance().getTime().toGMTString();
-                mydb.insertData_table1(getIntent().getStringExtra("user"),"Grey T-Shirt","Processing",currentTime,"35");
+                mydb.insertData_table1(getIntent().getStringExtra("user"),product, status,currentTime,"35");
                 startActivity(intent);
             }
         });
@@ -64,8 +70,10 @@ public class MenStoreActivity extends AppCompatActivity {
         image4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
+                String product = getString(R.string.checkSlimFitShirt);
+                String status = getString(R.string.processing);
                 String currentTime = Calendar.getInstance().getTime().toGMTString();
-                mydb.insertData_table1(getIntent().getStringExtra("user"),"Check Slim Fit Shirt","Processing",currentTime,"55");
+                mydb.insertData_table1(getIntent().getStringExtra("user"),product, status,currentTime,"55");
                 startActivity(intent);
 
             }
@@ -73,10 +81,11 @@ public class MenStoreActivity extends AppCompatActivity {
 
         image5.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
+                String product = getString(R.string.whiteSlimFitShirt);
+                String status = getString(R.string.processing);
 
                 String currentTime = Calendar.getInstance().getTime().toGMTString();
-                mydb.insertData_table1(getIntent().getStringExtra("user"),"White Slim Fit Shirt","Processing",currentTime,"32");
+                mydb.insertData_table1(getIntent().getStringExtra("user"),product, status,currentTime,"32");
                 startActivity(intent);
             }
         });

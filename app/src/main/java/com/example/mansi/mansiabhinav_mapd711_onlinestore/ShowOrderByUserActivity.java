@@ -33,10 +33,11 @@ public class ShowOrderByUserActivity extends AppCompatActivity {
 
         show.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                String noDataFound = getString(R.string.noDataFound);
 
                 Cursor res = mydb.getDataByUsername_table1(editText.getText().toString());
                 if(res.getCount() == 0 ){
-                    Toast.makeText(ShowOrderByUserActivity.this, "No Data Found", Toast.LENGTH_LONG).show();
+                    Toast.makeText(ShowOrderByUserActivity.this, noDataFound, Toast.LENGTH_LONG).show();
 
                     return;
                 }

@@ -28,7 +28,7 @@ public class JoinActivity extends AppCompatActivity {
         mydb = new DatabaseManager(this);
 
         Button joinStore = (Button) findViewById(R.id.joinStore);
-        Button btn = (Button) findViewById(R.id.button);
+
         radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
         editFirstName = (EditText) findViewById(R.id.editText2);
         editLastName = (EditText) findViewById(R.id.editText5);
@@ -56,6 +56,10 @@ public class JoinActivity extends AppCompatActivity {
 
         joinStore.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                String usernameReg = getString(R.string.usernameReg);
+                String ucontinue = getString(R.string.ucontinue);
+                String tryAgain = getString(R.string.tryAgain);
+
                 boolean registered = false;
                 Cursor res = mydb.getAllData();
 
@@ -67,7 +71,7 @@ public class JoinActivity extends AppCompatActivity {
                 }
 
                 if(registered){
-                    Toast.makeText(JoinActivity.this, "Email Address already Registered", Toast.LENGTH_LONG).show();
+                    Toast.makeText(JoinActivity.this, usernameReg, Toast.LENGTH_LONG).show();
                 } else{
                     boolean isInserted =   mydb.insertCustomer(editFirstName.getText().toString(),
                             editLastName.getText().toString(),
@@ -76,11 +80,11 @@ public class JoinActivity extends AppCompatActivity {
                             gender,
                             editDOB.getText().toString());
                     if(isInserted){
-                        Toast.makeText(JoinActivity.this, "You are Signed in Continue Shopping with us", Toast.LENGTH_LONG).show();
+                        Toast.makeText(JoinActivity.this,ucontinue , Toast.LENGTH_LONG).show();
                         startActivity(intent);
                     }
                     else {
-                        Toast.makeText(JoinActivity.this, "Please try again", Toast.LENGTH_LONG).show();
+                        Toast.makeText(JoinActivity.this, tryAgain, Toast.LENGTH_LONG).show();
 
                     }
                 }
@@ -91,40 +95,7 @@ public class JoinActivity extends AppCompatActivity {
             }
         });
 
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                // populateListview();
-                Cursor res = mydb.getAllData();
-                if(res.getCount() == 0 ){
-                    showMessages("Error","NO Data Found");
-                    return;
-                }
-                StringBuffer buffer = new StringBuffer();
-                while ((res.moveToNext())){
-                    buffer.append("Id :" + res.getString(0) +"\n");
-                    buffer.append("Name :" + res.getString(1) +"\n");
-                    buffer.append("Subject :" + res.getString(2) +"\n");
-                    buffer.append("Marks :" + res.getString(3) +"\n");
-                    buffer.append("Marks :" + res.getString(4) +"\n");
-                    buffer.append("Marks :" + res.getString(5) +"\n");
-
-                    showMessages("DATa",buffer.toString());
-                }
-
-
-            }
-        });
-
-
     }
 
-    public void  showMessages(String title, String Messeges){
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setCancelable(true);
-        builder.setTitle(title);
-        builder.setMessage(Messeges);
-        builder.show();
-    }
+
 }

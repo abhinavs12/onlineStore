@@ -20,11 +20,11 @@ public class ShowOrdersActivity extends AppCompatActivity {
         mydb = new DatabaseManager(this);
 
         textView = (TextView) findViewById(R.id.textView35);
-
+        String noDataFound = getString(R.string.noDataFound);
 
         Cursor res = mydb.getAllData_table1();
         if(res.getCount() == 0 ){
-            Toast.makeText(ShowOrdersActivity.this, "No Data Found", Toast.LENGTH_LONG).show();
+            Toast.makeText(ShowOrdersActivity.this, noDataFound, Toast.LENGTH_LONG).show();
 
             return;
         }

@@ -22,7 +22,7 @@
         android:layout_below="@+id/imageView4"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="81dp"
-        android:text="SIGN IN"
+        android:text="@string/signInButton"
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
         android:textColor="@color/white"
         android:background="@color/black"/>
@@ -34,7 +34,7 @@
         android:layout_alignStart="@+id/signin"
         android:layout_below="@+id/signin"
         android:background="@color/white"
-        android:text="Join"
+        android:text="@string/joinButton"
         android:textColor="@color/black" />
 
     <TextView
@@ -46,7 +46,7 @@
         android:layout_marginTop="31dp"
         android:fontFamily="serif"
         android:lineSpacingExtra="8sp"
-        android:text="Come on in"
+        android:text="@string/comeOnIn"
         android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/black"

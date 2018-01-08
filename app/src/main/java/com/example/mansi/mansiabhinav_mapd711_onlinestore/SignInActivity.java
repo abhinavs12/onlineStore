@@ -34,6 +34,7 @@ public class SignInActivity extends AppCompatActivity {
                 boolean signedIn = false;
                 boolean admin = false;
 
+                String wrongUsernameAndPassword = getString(R.string.wrongUsernameAndPassword);
                 Cursor res = mydb.getAllData();
 
                 while ((res.moveToNext())){
@@ -58,7 +59,7 @@ public class SignInActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                     else if (!admin ){
-                        Toast.makeText(SignInActivity.this, "Wrong Username Or Password", Toast.LENGTH_LONG).show();
+                        Toast.makeText(SignInActivity.this, wrongUsernameAndPassword, Toast.LENGTH_LONG).show();
                     }
 
 

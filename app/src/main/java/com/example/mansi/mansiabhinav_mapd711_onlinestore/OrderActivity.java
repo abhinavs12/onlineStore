@@ -64,9 +64,9 @@ public class OrderActivity extends AppCompatActivity {
 
 
             if (res.getString(2).length() > 20){
-                buffer1.append("\n"+"dd");
+                buffer1.append("\n");
 
-                buffer2.append("\n"+"dd");
+                buffer2.append("\n");
 
             }
 
